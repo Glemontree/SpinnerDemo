@@ -1,0 +1,36 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请选择您喜欢的城市" />
+    <!-- 
+    	android:entries="@array/book"
+		这个格式是规定的 @后面不是文件名。
+		因为这是android里面的约定 资源文件里面的数组都用R.array.xxx表示
+		就如同要找到组件布局必须用R.layout.xxx表示一样
+		book是数组名 存在values下
+		声明：
+ 		<string-array name="book" >
+        	<item >1</item>
+        	<item >2</item>
+        	<item >3</item>
+        	<item >3</item>
+		</string-array> 
+     -->
+    <Spinner 
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/city_labels"/>
+    
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
